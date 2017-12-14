@@ -3,28 +3,42 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
-	<title>Welcome</title>
+	<title>Login | ACTS</title>
 </head>
 <body>
 	<div class="container">
 		<div class="side">
-			<h1> Chat Server </h1>
+		<a class="menuItem" href="index.html">	<h2> ACTS </h2> </a>
 			<ul>
-				<li> 
-					<a class="menuItem" href="login">Login</a> 
+				<li>
+					<a class="menuItem" href="login.html">Login</a>
 				</li>
-				<li> 
-					<a class="menuItem" href="register">Register</a> 
+				<li>
+					<a class="menuItem" href="register.html">Register</a>
 				</li>
 			</ul>
 		</div>
 		<div class="content">
-			<h2> Login </h2>
+			<div class="inloggen">
+			<h1> Login </h1>
+			<table>
 			<form action="/login/in" method="POST">
-				  User:<br>
-				  <input type="text" name="user" value="user"><br>
-				  Password:<br>
-				  <input type="password" name="password" value="pass"><br><br>
-				  <input type="submit" value="Submit">
-			</form>	
+				<tr>
+					<td>User:</td>
+				</tr>
+				<tr>
+				  <td><input type="text" name="user" value="user"></td>
+				</tr>
+				<tr>
+				  <td>Password:</td>
+				<tr>
+				<tr>
+				  <td><input type="password" name="password" value="pass"></td>
+				</tr>
+				  <tr><td><input type="submit" value="Submit" class="button"></td></tr>
+			</form>
+		</table>
+			</div>
 		</div>
+	</body>
+		</html>
