@@ -2,42 +2,29 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/ACTS.png" type="image/png">
 	<title>Login | ACTS</title>
 </head>
 <body>
 	<div class="container">
-		<div class="side">
-		<a class="menuItem" href="index.html">	<h2> ACTS </h2> </a>
-			<ul>
-				<li>
-					<a class="menuItem" href="login.html">Login</a>
-				</li>
-				<li>
-					<a class="menuItem" href="register.html">Register</a>
-				</li>
-			</ul>
-		</div>
 		<div class="content">
-			<div class="inloggen">
-			<h1> Login </h1>
+			<div class="form">
+			<h1> ACTS</h1>
 			<table>
 			<form action="/login/in" method="POST">
 				<tr>
-					<td>User:</td>
+				  <td><input id="user" style="text-indent:17px" type="text" name="user"></td>
 				</tr>
 				<tr>
-				  <td><input type="text" name="user" value="user"></td>
+				  <td><input id="password" style="text-indent:17px" type="password" name="password"></td>
 				</tr>
 				<tr>
-				  <td>Password:</td>
-				<tr>
-				<tr>
-				  <td><input type="password" name="password" value="pass"></td>
-				</tr>
-				  <tr><td><input type="submit" value="Submit" class="button"></td></tr>
-			</form>
+            <td><input type="submit" value="Login" class="button"></td>
+        </tr>
+      </form>
 		</table>
+
 			</div>
 		</div>
 	</body>
