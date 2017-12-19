@@ -162,3 +162,9 @@ background-repeat: no-repeat;
 background-position:8px 9px;
 margin-bottom: 10px;
 }
+
+.searchbar{
+  width: 100%;
+  background-color:#6161f7;
+  height: 20%;
+}
