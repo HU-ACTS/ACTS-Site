@@ -2,35 +2,35 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
 	<title>Welcome | ACTS</title>
 </head>
 <body>
 	<div class="container">
 		<div class="side">
-			<a class="home" href="index.html"><h2> ACTS </h2> </a>
+			<a class="home" href="index.html">	<h2> ACTS </h2> </a>
 			<ul>
 				<li>
-					<a class="menuItem">Naam fysio</a>
+					<a class="menuItem" href="login.html">Login</a>
 				</li>
 				<li>
-					<a class="menuItem" href="login.html">Uitloggen</a>
+					<a class="menuItem" href="register.html">Register</a>
 				</li>
 			</ul>
 		</div>
 		<div class="content">
-			<div class="searchbar">
-				<input type="text" name="search" placeholder="Search..">
+			<h1> Welcome </h1>
+			<div class="imagerow">
+				<img src="img/render.jpeg" class="image" alt="render">
+				<img src="img/onderdelen.jpeg" class="image" alt="onderdelen">
 			</div>
-			<div class="data">
+			<div class="welcome">
 			<p>
 				Welcome to the ACTS server, this webpage is made to give a inside into the sensor data of the acts Project.
 			</p>
-			<img src="img/render.jpeg" class="image" alt="render">
-			<img src="img/onderdelen.jpeg" class="image" alt="onderdelen">
 			</div>
 
 		</div>
