@@ -120,5 +120,37 @@ h1 {
 	background-color: #3366ff;
 	color: white;
 	text-align: center;
+<<<<<<< HEAD
 	font-size: 40px;
+=======
+	font-size: 14px;
+	padding: 10px;
+}
+
+.button{
+	color:#ffffff;
+	background-color:#6161f7;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.form{
+	padding-left: 25px;
+	padding-top: 20px;
+	height: 250px;
+	width: 300px;
+}
+
+input{
+font-family:"Arial";
+font-size:90%;
+background-color:#f2f2f2;
+border: 1px solid #bdbdbd;
+border-radius:5px;
+padding: 5px 5px 5px 5px;
+background-repeat: no-repeat;
+background-position:8px 9px;
+margin-bottom: 10px;
+>>>>>>> parent of 0517e4c... De datapagina gemaakt
 }
