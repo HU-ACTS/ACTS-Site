@@ -12,11 +12,20 @@ body {
 
 h1{
   color: #ffffff;
-  margin-left:13%;
   font-size: 40px;
 }
 
 input{
+font-family:"Verdana";
+font-size:100%;
+background-color:#f2f2f2;
+border: 1px solid #bdbdbd;
+border-radius:5px;
+padding: 5px 5px 5px 20px;
+margin-bottom: 10px;
+}
+
+textarea{
 font-family:"Verdana";
 font-size:100%;
 background-color:#f2f2f2;
