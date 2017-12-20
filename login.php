@@ -12,7 +12,7 @@
 			<div class="form">
 			<h1> ACTS</h1>
 			<table>
-			<form action="/login/in" method="POST">
+			<form action="auth.php" method="POST">
 				<tr>
 				  <td><input id="user" style="text-indent:17px" type="text" name="user"></td>
 				</tr>
