@@ -1,3 +1,12 @@
+<?php
+if (!isset($_SERVER['PHP_AUTH_USER'])) {
+    header("Location: login.php");
+    die();
+} else {
+    echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
+    echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,23 +23,45 @@
 			<a class="home" href="index.html">	<h2> ACTS </h2> </a>
 			<ul>
 				<li>
-					<a class="menuItem" href="login.html">Login</a>
+					<a class="menuItem" href="login.php">Login</a>
 				</li>
 				<li>
-					<a class="menuItem" href="register.html">Register</a>
+					<a class="menuItem" href="register.php">Register</a>
 				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<h1> Welcome </h1>
-			<div class="imagerow">
-				<img src="img/render.jpeg" class="image" alt="render">
-				<img src="img/onderdelen.jpeg" class="image" alt="onderdelen">
+			<div class="searchbar">
+
 			</div>
-			<div class="welcome">
-			<p>
-				Welcome to the ACTS server, this webpage is made to give a inside into the sensor data of the acts Project.
-			</p>
+			<div class="data">
+				<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			  	<script type="text/javascript">
+					google.charts.load('current', {'packages':['corechart']});
+					google.charts.setOnLoadCallback(drawChart);
+
+					function drawChart() {
+					  var data = google.visualization.arrayToDataTable([
+						['day', 'Target', 'Result'],
+						['2004',  1000,      400],
+						['2005',  1170,      4600],
+						['2006',  660,       1120],
+						['2007',  1030,      540]
+					  ]);
+
+					  var options = {
+						title: 'Period: 4 weeks',
+						curveType: 'function',
+						legend: { position: 'right' }
+					  };
+
+					  var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+					  chart.draw(data, options);
+					}
+				</script>
+				<div id="curve_chart" style="width: 900px; height: 500px"></div>
 			</div>
 
 		</div>

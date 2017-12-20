@@ -10,11 +10,11 @@
 		<div class="side">
 			<h1> Chat Server </h1>
 			<ul>
-				<li> 
-					<a class="menuItem" href="login">Login</a> 
+				<li>
+					<a class="menuItem" href="login">Login</a>
 				</li>
-				<li> 
-					<a class="menuItem" href="register">Register</a> 
+				<li>
+					<a class="menuItem" href="register">Register</a>
 				</li>
 			</ul>
 		</div>
